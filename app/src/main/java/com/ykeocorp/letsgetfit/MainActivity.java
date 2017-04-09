@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     /** Open Workout when user clicks on workout **/
     public void openWorkout(View view) {
-        Intent intent = new Intent(this,WorkoutActivity.class);
+        Intent intent = new Intent(this, WorkoutActivity.class);
         startActivity(intent);
     }
 
