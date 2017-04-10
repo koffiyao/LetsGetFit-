@@ -27,4 +27,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NutritionActivity.class);
         startActivity(intent);
     }
+
+    /** Open User Info **/
+    public void openUserInfo(View view) {
+        Intent intent = new Intent(this, UserInfoActivity.class);
+        startActivity(intent);
+    }
 }
