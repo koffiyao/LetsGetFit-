@@ -10,4 +10,10 @@
     <string name="player_error">Error initializing YouTube player: %s</string>
     <string name="seek_to">Jump To</string>
     <string name="seek_to_hint">Seconds</string>
+    <string name="button_user_info">User Info</string>
+    <string name="button_gain_weight">Gain Weight</string>
+    <string name="button_lose_weight">Lose Weight</string>
+    <string name="button_easy">Easy</string>
+    <string name="button_medium">Medium</string>
+    <string name="button_hard">Hard</string>
 </resources>

@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -30,6 +32,12 @@ public class NutritionActivity extends AppCompatActivity {
     static final String APP_KEY = "28a51cd162c6898cb107d06b74ef1bcc";
     static final String API_URL_SEARCH = "https://api.nutritionix.com/v1_1/search/";
     static final String API_URL_ITEM = "https://api.nutritionix.com/v1_1/item?";
+    static final String FIELD = "?results=0%3A10&" +
+            "fields=fields=item_name%2Cbrand_name%2Cnf_calories" +
+            "%2Cnf_total_fat%2Cnf_total_carbohydrate%2Cnf_protein&";
+
+    String resultJson;
+    Result[] resultArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +70,9 @@ public class NutritionActivity extends AppCompatActivity {
             // Do some validation here
 
             try {
-                URL url = new URL(API_URL_SEARCH + food + "?fields=*" + "&appId=" + APP_ID + "&appKey=" + APP_KEY);
+
+                URL url = new URL(API_URL_SEARCH + food + FIELD +
+                        "&appId=" + APP_ID + "&appKey=" + APP_KEY);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 try {
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
@@ -72,6 +82,10 @@ public class NutritionActivity extends AppCompatActivity {
                         stringBuilder.append(line).append("\n");
                     }
                     bufferedReader.close();
+
+                   /* resultJson = stringBuilder.toString();
+                    Gson gson = new Gson();
+                    resultArray = gson.fromJson(resultJson, Result[].class);*/
                     return stringBuilder.toString();
                 } finally {
                     urlConnection.disconnect();
@@ -88,6 +102,7 @@ public class NutritionActivity extends AppCompatActivity {
             }
             progressBar.setVisibility(View.GONE);
             Log.i("INFO", response);
+            //response = resultArray;
             responseView.setText(response);
             // TODO: check this.exception
             // TODO: do something with the feed

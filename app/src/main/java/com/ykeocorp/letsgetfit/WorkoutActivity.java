@@ -2,6 +2,8 @@ package com.ykeocorp.letsgetfit;
 
 import android.os.Bundle;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -10,8 +12,26 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class WorkoutActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+public class WorkoutActivity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_training_difficulty);
+    }
+
+    /** Open different difficulties for selecting plan **/
+    public void openLoseWeight(View view) {
+        Intent intent = new Intent(this, TrainingDifficultyActivity.class);
+        startActivity(intent);
+    }
+
+    public void openGainWeight(View view) {
+        Intent intent = new Intent(this, GainWeightTrainingDifficulty.class);
+        startActivity(intent);
+    }
+
+/*
     private static final int RECOVERY_REQUEST = 1;
     private YouTubePlayerView youTubeView1, youTubeView2, youTubeView3;
 
@@ -56,6 +76,6 @@ public class WorkoutActivity extends YouTubeBaseActivity implements YouTubePlaye
             youTubeView3.initialize(Config.YOUTUBE_API_KEY, this);
         }
     }
-
+*/
     //protected Provider getYouTubePlayerProvider() { return youTubeView; }
 }
