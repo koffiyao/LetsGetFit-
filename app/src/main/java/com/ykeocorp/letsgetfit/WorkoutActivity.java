@@ -17,7 +17,7 @@ public class WorkoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_training_difficulty);
+        setContentView(R.layout.activity_workout);
     }
 
     /** Open different difficulties for selecting plan **/

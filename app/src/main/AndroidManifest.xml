@@ -41,13 +41,20 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".TrainingDifficultyActivity">
+        <activity
+            android:name=".TrainingDifficultyActivity"
             android:parentActivityName=".WorkoutActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".GainWeightTrainingDifficulty"></activity>
+        <activity
+            android:name=".GainWeightTrainingDifficulty"
+            android:parentActivityName=".WorkoutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
