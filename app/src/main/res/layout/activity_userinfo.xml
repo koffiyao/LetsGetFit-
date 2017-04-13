@@ -1,16 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/userInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Info"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="6dp" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_centerHorizontal="true"
+        android:text="User Info" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_below="@+id/userInfo"
+        android:layout_alignLeft="@+id/ageText"
+        android:layout_alignStart="@+id/ageText"
+        android:layout_marginTop="28dp" />
+
+    <RadioButton
+        android:id="@+id/maleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_alignTop="@+id/genderText"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignStart="@+id/age" />
+
+    <RadioButton
+        android:id="@+id/femaleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_alignBaseline="@+id/maleButton"
+        android:layout_alignBottom="@+id/maleButton"
+        android:layout_alignRight="@+id/age"
+        android:layout_alignEnd="@+id/age" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_alignBaseline="@+id/age"
+        android:layout_alignBottom="@+id/age"
+        android:layout_alignLeft="@+id/weightText"
+        android:layout_alignStart="@+id/weightText" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_above="@+id/weight"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_alignStart="@+id/weight"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:layout_alignBaseline="@+id/weight"
+        android:layout_alignBottom="@+id/weight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_above="@+id/saveButton"
+        android:layout_alignLeft="@+id/saveButton"
+        android:layout_alignStart="@+id/saveButton"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
