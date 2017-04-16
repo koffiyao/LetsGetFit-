@@ -18,4 +18,10 @@ public class TrainingDifficultyActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ScheduleLWeightEasy.class);
         startActivity(intent);
     }
+
+    // Open schedule for medium program
+    public void openMedium(View view) {
+        Intent intent = new Intent(this, ScheduleLWeightEasy.class);
+        startActivity(intent);
+    }
 }
