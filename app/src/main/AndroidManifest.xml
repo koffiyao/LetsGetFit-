@@ -55,6 +55,35 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity android:name=".ScheduleLWeightEasy" />
+        <activity android:name=".WorkoutLWEasyD1" />
+        <activity android:name=".WorkoutLWEasyD2" />
+        <activity android:name=".WorkoutLWEasyD3" />
+        <activity android:name=".WorkoutLWEasyD4" />
+        <activity android:name=".WorkoutLWEasyD5" />
+        <activity android:name=".WorkoutLWEasyD6" />
+        <activity android:name=".WorkoutLWEasyD7" />
+        <activity android:name=".WorkoutLWEasyD8" />
+        <activity android:name=".WorkoutLWEasyD9" />
+        <activity android:name=".WorkoutLWEasyD10" />
+        <activity android:name=".WorkoutLWEasyD11" />
+        <activity android:name=".WorkoutLWEasyD12" />
+        <activity android:name=".WorkoutLWEasyD13" />
+        <activity android:name=".WorkoutLWEasyD14" />
+        <activity android:name=".WorkoutLWEasyD15" />
+        <activity android:name=".WorkoutLWEasyD16" />
+        <activity android:name=".WorkoutLWEasyD17" />
+        <activity android:name=".WorkoutLWEasyD18" />
+        <activity android:name=".WorkoutLWEasyD19" />
+        <activity android:name=".WorkoutLWEasyD20" />
+        <activity android:name=".WorkoutLWEasyD21" />
+        <activity android:name=".WorkoutLWEasyD22" />
+        <activity android:name=".WorkoutLWEasyD23" />
+        <activity android:name=".WorkoutLWEasyD24" />
+        <activity android:name=".WorkoutLWEasyD25" />
+        <activity android:name=".WorkoutLWEasyD26" />
+        <activity android:name=".WorkoutLWEasyD27" />
+        <activity android:name=".WorkoutLWEasyD28"></activity>
     </application>
 
 </manifest>
