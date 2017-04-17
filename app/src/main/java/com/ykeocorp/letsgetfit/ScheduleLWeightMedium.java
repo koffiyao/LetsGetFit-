@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class ScheduleWeightMedium extends AppCompatActivity {
+public class ScheduleLWeightMedium extends AppCompatActivity {
     ListView mediumListView;
 
     @Override

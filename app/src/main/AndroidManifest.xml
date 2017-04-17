@@ -84,7 +84,7 @@
         <activity android:name=".WorkoutLWEasyD26" />
         <activity android:name=".WorkoutLWEasyD27" />
         <activity android:name=".WorkoutLWEasyD28" />
-        <activity android:name=".ScheduleWeightMedium" />
+        <activity android:name=".ScheduleLWeightMedium" />
         <activity android:name=".WorkoutLWMediumD1" />
         <activity android:name=".WorkoutLWMediumD2" />
         <activity android:name=".WorkoutLWMediumD3" />
@@ -112,7 +112,36 @@
         <activity android:name=".WorkoutLWMediumD25" />
         <activity android:name=".WorkoutLWMediumD26" />
         <activity android:name=".WorkoutLWMediumD27" />
-        <activity android:name=".WorkoutLWMediumD28"></activity>
+        <activity android:name=".WorkoutLWMediumD28" />
+        <activity android:name=".ScheduleLWeightHard" />
+        <activity android:name=".WorkoutLWHardD1" />
+        <activity android:name=".WorkoutLWHardD2" />
+        <activity android:name=".WorkoutLWHardD3" />
+        <activity android:name=".WorkoutLWHardD4" />
+        <activity android:name=".WorkoutLWHardD5" />
+        <activity android:name=".WorkoutLWHardD6" />
+        <activity android:name=".WorkoutLWHardD7" />
+        <activity android:name=".WorkoutLWHardD8" />
+        <activity android:name=".WorkoutLWHardD9" />
+        <activity android:name=".WorkoutLWHardD10" />
+        <activity android:name=".WorkoutLWHardD11" />
+        <activity android:name=".WorkoutLWHardD12" />
+        <activity android:name=".WorkoutLWHardD13" />
+        <activity android:name=".WorkoutLWHardD14" />
+        <activity android:name=".WorkoutLWHardD15" />
+        <activity android:name=".WorkoutLWHardD16" />
+        <activity android:name=".WorkoutLWHardD17" />
+        <activity android:name=".WorkoutLWHardD18" />
+        <activity android:name=".WorkoutLWHardD19" />
+        <activity android:name=".WorkoutLWHardD20" />
+        <activity android:name=".WorkoutLWHardD21" />
+        <activity android:name=".WorkoutLWHardD22" />
+        <activity android:name=".WorkoutLWHardD23" />
+        <activity android:name=".WorkoutLWHardD24" />
+        <activity android:name=".WorkoutLWHardD25" />
+        <activity android:name=".WorkoutLWHardD26" />
+        <activity android:name=".WorkoutLWHardD27" />
+        <activity android:name=".WorkoutLWHardD28"></activity>
     </application>
 
 </manifest>
