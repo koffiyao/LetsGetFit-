@@ -7,17 +7,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import static com.ykeocorp.letsgetfit.R.id.mediumListView;
 
 public class ScheduleWeightMedium extends AppCompatActivity {
-    ListView listView;
+    ListView mediumListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_weight_medium);
 
-        listView = (ListView) findViewById(mediumListView);
+        mediumListView = (ListView) findViewById(R.id.mediumListView);
 
         // components of the list on the screen
         final String[] days = {"Day 1", "Day 2", "Day 3", "Day 4", "Day 5",
@@ -29,9 +28,9 @@ public class ScheduleWeightMedium extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.activity_list_item, android.R.id.text1,days);
 
-        listView.setAdapter(adapter);
+        mediumListView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mediumListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {    //open program on day 1

@@ -13,5 +13,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:height="40dp"
-        android:dividerHeight="2dp" />
+        android:dividerHeight="10dp"
+        android:footerDividersEnabled="false"
+        tools:ignore="RtlHardcoded" />
 </android.support.constraint.ConstraintLayout>

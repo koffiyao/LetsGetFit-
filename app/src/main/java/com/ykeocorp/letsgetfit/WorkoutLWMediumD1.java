@@ -8,6 +8,6 @@ public class WorkoutLWMediumD1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workouy_lwmedium_d1);
+        setContentView(R.layout.activity_workout_lwmedium_d1);
     }
 }
