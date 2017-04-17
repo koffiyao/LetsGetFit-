@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.ykeocorp.letsgetfit.WorkoutLWEasyD5">
 
+    <ListView
+        android:id="@+id/LWED5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:dividerHeight="2dp" />
 </android.support.constraint.ConstraintLayout>
