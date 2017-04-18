@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ykeocorp.letsgetfit.LWEasy_Java.ScheduleLWeightEasy;
+import com.ykeocorp.letsgetfit.LWHard_Java.ScheduleLWeightHard;
+import com.ykeocorp.letsgetfit.LWMedium_Java.ScheduleLWeightMedium;
+
 public class TrainingDifficultyActivity extends AppCompatActivity {
 
     @Override
