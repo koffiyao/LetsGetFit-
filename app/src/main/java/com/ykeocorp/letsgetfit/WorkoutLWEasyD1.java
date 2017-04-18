@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -21,7 +20,7 @@ public class WorkoutLWEasyD1 extends AppCompatActivity {
     final String[] workouts = {"Barbell Squats", "Deadlifts", "Bench Press", "Push Ups", "Lats Pulldown"};
 
     String[] repetition = {"3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)",
-            "3 sets, 6-10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)",};
+            "3 sets, 6-10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

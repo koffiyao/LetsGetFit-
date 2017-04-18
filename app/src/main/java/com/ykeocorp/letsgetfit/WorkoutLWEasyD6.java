@@ -2,12 +2,26 @@ package com.ykeocorp.letsgetfit;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class WorkoutLWEasyD6 extends AppCompatActivity {
 
     ListView LWED6;
+
+    // components of the list on the screen
+    int[] images = {R.drawable.sit_up, R.drawable.crunch, R.drawable.sidecrunch,
+            R.drawable.flutterkick, R.drawable.plank};
+
+    final String[] workouts = {"Sit-ups", "Crunch", "Side Crunch", "Flutter Kick", "Plank"};
+
+    String[] repetition = {"3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)", "2 sets, 10 reps each side (1-2 min rest)",
+            "2 sets, 25 reps (1-2 min rest)", "2 for 30 sec each (1-2 min rest)"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,12 +29,40 @@ public class WorkoutLWEasyD6 extends AppCompatActivity {
 
         LWED6 = (ListView) findViewById(R.id.LWED6);
 
-        // components of the list on the screen
-        final String[] workouts = {"Sit-ups:\n3 sets of 10 reps", "Crunch:\n3 sets of 10 reps", "Side Crunch:\n2 sets of 10 reps on each side", "Flutter Kick:\n2 sets of 25 reps", "Plank:\n2 at 30 sec each"};
+        WorkoutLWEasyD6.CustomAdapter customAdapter = new WorkoutLWEasyD6.CustomAdapter();
 
-        ArrayAdapter<String> easyAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.activity_list_item, android.R.id.text1, workouts);
+        LWED6.setAdapter(customAdapter);
+    }
+    class CustomAdapter extends BaseAdapter {
 
-        LWED6.setAdapter(easyAdapter);
+        @Override
+        public int getCount() {
+        return images.length;
+    }
+
+        @Override
+        public Object getItem(int position) {
+        return null;
+    }
+
+        @Override
+        public long getItemId(int position) {
+        return 0;
+    }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            convertView = getLayoutInflater().inflate(R.layout.custom_layout, null);
+
+            ImageView imageView = (ImageView)convertView.findViewById(R.id.imageView);
+            TextView textView_name = (TextView)convertView.findViewById(R.id.textView_name);
+            TextView textView_reps = (TextView)convertView.findViewById(R.id.textView_reps);
+
+            imageView.setImageResource(images[position]);
+            textView_name.setText(workouts[position]);
+            textView_reps.setText(repetition[position]);
+
+            return convertView;
+        }
     }
 }
