@@ -17,7 +17,7 @@ public class ScheduleLWeightEasy extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedule_lweight_easy);
+        setContentView(R.layout.activity_schedule_lw_easy);
 
         easyListView = (ListView) findViewById(R.id.easyListView);
 

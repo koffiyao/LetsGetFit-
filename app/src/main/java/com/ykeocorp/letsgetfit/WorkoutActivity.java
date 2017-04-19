@@ -4,13 +4,6 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Toast;
-
-import com.google.android.youtube.player.YouTubeBaseActivity;
-import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayer.Provider;
-import com.google.android.youtube.player.YouTubePlayerView;
 
 public class WorkoutActivity extends AppCompatActivity {
 
@@ -22,7 +15,7 @@ public class WorkoutActivity extends AppCompatActivity {
 
     /** Open different difficulties for selecting plan **/
     public void openLoseWeight(View view) {
-        Intent intent = new Intent(this, TrainingDifficultyActivity.class);
+        Intent intent = new Intent(this, LoseWeightTrainingDifficulty.class);
         startActivity(intent);
     }
 

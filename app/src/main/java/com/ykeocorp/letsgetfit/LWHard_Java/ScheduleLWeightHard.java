@@ -16,7 +16,7 @@ public class ScheduleLWeightHard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedule_lweight_hard);
+        setContentView(R.layout.activity_schedule_lw_hard);
 
         hardListView = (ListView) findViewById(R.id.hardListView);
 

@@ -49,7 +49,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".TrainingDifficultyActivity"
+            android:name=".LoseWeightTrainingDifficulty"
             android:parentActivityName=".WorkoutActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
