@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.ykeocorp.letsgetfit.GWEasy_Java.ScheduleGWeightEasy;
-//import com.ykeocorp.letsgetfit.GWHard_Java.ScheduleGWeightHard;
-//import com.ykeocorp.letsgetfit.GWMedium_Java.ScheduleGWeightMedium;
+import com.ykeocorp.letsgetfit.GWHard_Java.ScheduleGWeightHard;
+import com.ykeocorp.letsgetfit.GWMedium_Java.ScheduleGWeightMedium;
 
 public class GainWeightTrainingDifficulty extends AppCompatActivity {
 
@@ -23,14 +23,14 @@ public class GainWeightTrainingDifficulty extends AppCompatActivity {
     }
 
     // Open schedule for medium program
-    /*public void openGWMedium(View view) {
-        Intent intent = new Intent(this, ScheduleLWeightMedium.class);
+    public void openGWMedium(View view) {
+        Intent intent = new Intent(this, ScheduleGWeightMedium.class);
         startActivity(intent);
-    }*/
+    }
 
     // Open schedule for hard program
-    /*public void openGWHard(View view) {
-        Intent intent = new Intent(this, ScheduleLWeightHard.class);
+    public void openGWHard(View view) {
+        Intent intent = new Intent(this, ScheduleGWeightHard.class);
         startActivity(intent);
-    }*/
+    }
 }

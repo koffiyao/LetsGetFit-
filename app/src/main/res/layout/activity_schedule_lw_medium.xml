@@ -7,7 +7,7 @@
     tools:context="com.ykeocorp.letsgetfit.LWMedium_Java.ScheduleLWeightMedium">
 
     <ListView
-        android:id="@+id/mediumListView"
+        android:id="@+id/LW_mediumListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"

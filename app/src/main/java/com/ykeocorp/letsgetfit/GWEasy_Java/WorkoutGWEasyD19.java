@@ -16,7 +16,8 @@ public class WorkoutGWEasyD19 extends AppCompatActivity {
     ListView GWED19;
 
     // components of the list on the screen
-    int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.benchpress, R.drawable.pushup, R.drawable.latspulldown};
+    int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.calfraises, R.drawable.benchpress, R.drawable.pushup,
+            R.drawable.pullup, R.drawable.latspulldown};
 
     final String[] workouts = {"Barbell Squats", "Deadlifts", "Calves Raises", "Bench Press", "Push Ups", "Pull Ups", "Seated Row"};
 

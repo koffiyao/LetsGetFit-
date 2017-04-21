@@ -11,14 +11,14 @@ import android.widget.ListView;
 import com.ykeocorp.letsgetfit.R;
 
 public class ScheduleLWeightHard extends AppCompatActivity {
-    ListView hardListView;
+    ListView LW_hardListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_lw_hard);
 
-        hardListView = (ListView) findViewById(R.id.hardListView);
+        LW_hardListView = (ListView) findViewById(R.id.LW_hardListView);
 
         // components of the list on the screen
         final String[] days = {"Day 1", "Day 2", "Day 3", "Day 4", "Day 5",
@@ -30,9 +30,9 @@ public class ScheduleLWeightHard extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.activity_list_item, android.R.id.text1,days);
 
-        hardListView.setAdapter(adapter);
+        LW_hardListView.setAdapter(adapter);
 
-        hardListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        LW_hardListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {    //open program on day 1

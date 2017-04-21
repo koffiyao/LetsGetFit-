@@ -91,6 +91,7 @@
         <activity android:name=".GWEasy_Java.WorkoutGWEasyD26" />
         <activity android:name=".GWEasy_Java.WorkoutGWEasyD27" />
         <activity android:name=".GWEasy_Java.WorkoutGWEasyD28" />
+
         <activity android:name=".LWEasy_Java.ScheduleLWeightEasy" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD1" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD2" />
@@ -120,6 +121,37 @@
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD26" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD27" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD28" />
+
+        <activity android:name=".GWMedium_Java.ScheduleGWeightMedium" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD1" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD2" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD3" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD4" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD5" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD6" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD7" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD8" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD9" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD10" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD11" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD12" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD13" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD14" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD15" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD16" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD17" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD18" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD19" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD20" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD21" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD22" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD23" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD24" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD25" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD26" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD27" />
+        <activity android:name=".GWMedium_Java.WorkoutGWMediumD28" />
+
         <activity android:name=".LWMedium_Java.ScheduleLWeightMedium" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD1" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD2" />
@@ -149,6 +181,37 @@
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD26" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD27" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD28" />
+
+        <activity android:name=".GWHard_Java.ScheduleGWeightHard" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD1" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD2" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD3" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD4" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD5" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD6" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD7" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD8" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD9" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD10" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD11" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD12" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD13" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD14" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD15" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD16" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD17" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD18" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD19" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD20" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD21" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD22" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD23" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD24" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD25" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD26" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD27" />
+        <activity android:name=".GWHard_Java.WorkoutGWHardD28" />
+
         <activity android:name=".LWHard_Java.ScheduleLWeightHard" />
         <activity android:name=".LWHard_Java.WorkoutLWHardD1" />
         <activity android:name=".LWHard_Java.WorkoutLWHardD2" />
