@@ -13,7 +13,7 @@ import com.ykeocorp.letsgetfit.R;
 
 public class WorkoutGWMediumD9 extends AppCompatActivity {
 
-    ListView GWED9;
+    ListView GWMD9;
 
     // components of the list on the screen
     int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.calfraises, R.drawable.benchpress, R.drawable.pushup,
@@ -30,11 +30,11 @@ public class WorkoutGWMediumD9 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout_gwmedium_d9);
 
-        GWED9 = (ListView) findViewById(R.id.GWED1);
+        GWMD9 = (ListView) findViewById(R.id.GWMD1);
 
         WorkoutGWMediumD9.CustomAdapter customAdapter = new WorkoutGWMediumD9.CustomAdapter();
 
-        GWED9.setAdapter(customAdapter);
+        GWMD9.setAdapter(customAdapter);
     }
     class CustomAdapter extends BaseAdapter {
 

@@ -10,6 +10,6 @@ public class WorkoutGWHardD1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout_lwhard_d1);
+        setContentView(R.layout.activity_workout_gwhard_d1);
     }
 }
