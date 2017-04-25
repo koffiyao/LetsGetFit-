@@ -16,8 +16,7 @@ public class WorkoutLWEasyD20 extends AppCompatActivity {
     ListView LWED20;
 
     // components of the list on the screen
-    int[] images = {R.drawable.sit_up, R.drawable.jackknife, R.drawable.legraises,
-            R.drawable.plank, R.drawable.sideplank};
+    int[] images = {R.drawable.sit_up, R.drawable.jackknife, R.drawable.legraises, R.drawable.plank, R.drawable.sideplank};
 
     final String[] workouts = {"Sit-ups", "Jack Knife", "Leg Raises", "Plank", "Side Plank"};
 

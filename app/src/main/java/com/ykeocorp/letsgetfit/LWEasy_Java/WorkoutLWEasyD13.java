@@ -16,8 +16,7 @@ public class WorkoutLWEasyD13 extends AppCompatActivity {
     ListView LWED13;
 
     // components of the list on the screen
-    int[] images = {R.drawable.bicyclecrunch, R.drawable.sidecrunch, R.drawable.flutterkick,
-            R.drawable.flutterkick, R.drawable.plank};
+    int[] images = {R.drawable.bicyclecrunch, R.drawable.sidecrunch, R.drawable.flutterkick, R.drawable.flutterkick, R.drawable.plank};
 
     final String[] workouts = {"Bicycle Crunch", "Side Crunch", "Capital ABC", "Lower Case abc", "Plank"};
 

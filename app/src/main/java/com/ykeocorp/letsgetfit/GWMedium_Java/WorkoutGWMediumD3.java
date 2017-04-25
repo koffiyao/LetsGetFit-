@@ -16,14 +16,12 @@ public class WorkoutGWMediumD3 extends AppCompatActivity {
     ListView GWMD3;
 
     // components of the list on the screen
-    int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.calfraises, R.drawable.benchpress, R.drawable.pushup,
-            R.drawable.pullup, R.drawable.latspulldown};
+    int[] images = {R.drawable.deadlift, R.drawable.pullup, R.drawable.bentoverbarbellrow, R.drawable.bicepcurl, R.drawable.preachercurl};
 
-    final String[] workouts = {"Barbell Squats", "Deadlifts", "Calves Raises", "Bench Press", "Push Ups", "Pull Ups", "Lats Pulldown"};
+    final String[] workouts = {"Deadlifts", "Pull Up", "Bent-Over Barbell Row", "Bicep Curl", "Preacher Curl"};
 
-    String[] repetition = {"3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)",
-            "3 sets, 10 reps (1-2 min rest)", "3 sets, 6-10 reps (1-2 min rest)", "3 sets, 1-3 reps (1-2 min rest)",
-            "3 sets, 10 reps (1-2 min rest)"};
+    String[] repetition = {"4 sets, 8 reps (1-2 min rest)", "4 sets, 6-10 reps (1-2 min rest)", "4 sets, 8 reps (1-2 min rest)",
+            "4 sets, 8 reps (1-2 min rest)", "4 sets, 8 reps (1-2 min rest)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

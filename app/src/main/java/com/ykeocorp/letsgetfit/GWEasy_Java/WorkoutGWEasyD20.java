@@ -16,7 +16,7 @@ public class WorkoutGWEasyD20 extends AppCompatActivity {
     ListView GWED20;
 
     // components of the list on the screen
-    int[] images = {R.drawable.legraises, R.drawable.flutterkick, R.drawable.plank, R.drawable.squat, R.drawable.flutterkick,
+    int[] images = {R.drawable.mountainclimbers, R.drawable.flutterkick, R.drawable.plank, R.drawable.wallsit, R.drawable.flutterkick,
             R.drawable.flutterkick, R.drawable.legraises};
 
     final String[] workouts = {"Mountain Climbers", "Flutter Kicks", "Plank", "Wall Sit", "Capital ABC", "Lower abc", "Leg Raises"};

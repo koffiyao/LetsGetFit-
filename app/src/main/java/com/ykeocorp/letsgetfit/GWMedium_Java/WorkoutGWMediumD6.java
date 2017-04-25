@@ -16,14 +16,14 @@ public class WorkoutGWMediumD6 extends AppCompatActivity {
     ListView GWMD6;
 
     // components of the list on the screen
-    int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.calfraises, R.drawable.benchpress, R.drawable.pushup,
-            R.drawable.pullup, R.drawable.latspulldown};
+    int[] images = {R.drawable.sit_up, R.drawable.crunch, R.drawable.sidecrunch, R.drawable.plank, R.drawable.russiantwist,
+            R.drawable.jackknife, R.drawable.legraises};
 
-    final String[] workouts = {"Barbell Squats", "Deadlifts", "Calves Raises", "Bench Press", "Push Ups", "Pull Ups", "Lats Pulldown"};
+    final String[] workouts = {"Sit-ups", "Crunch", "Side Crunch", "Plank", "Russian Twist", "Jack Knife", "Leg Raises"};
 
-    String[] repetition = {"3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)",
-            "3 sets, 10 reps (1-2 min rest)", "3 sets, 6-10 reps (1-2 min rest)", "3 sets, 1-3 reps (1-2 min rest)",
-            "3 sets, 10 reps (1-2 min rest)"};
+    String[] repetition = {"2 sets, 25 reps (1-2 min rest)", "3 sets, 25 reps (1-2 min rest)", "2 sets, 25 reps (1-2 min rest)",
+            "2 for 1 min each (1-2 min rest)", "2 sets, 25 reps (1-2 min rest)", "2 sets, 25 reps (1-2 min rest)",
+            "1 set (1-2 min rest)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

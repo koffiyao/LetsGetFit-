@@ -16,14 +16,15 @@ public class WorkoutGWMediumD8 extends AppCompatActivity {
     ListView GWMD8;
 
     // components of the list on the screen
-    int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.calfraises, R.drawable.benchpress, R.drawable.pushup,
-            R.drawable.pullup, R.drawable.latspulldown};
+    int[] images = {R.drawable.benchpress, R.drawable.inclinebenchpress, R.drawable.machinefly, R.drawable.tricepdip,
+            R.drawable.narrowgripbenchpress, R.drawable.triceppulldown, R.drawable.militarypress, R.drawable.lateralraises};
 
-    final String[] workouts = {"Barbell Squats", "Deadlifts", "Calves Raises", "Bench Press", "Push Ups", "Pull Ups", "Lats Pulldown"};
+    final String[] workouts = {"Bench Press", "Incline Bench Press", "Machine Fly", "Tricep Dips", "Bench Press Narrow Grip",
+            "Triceps Pulldown", "Military Press", "Lateral Raise"};
 
-    String[] repetition = {"3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)", "3 sets, 10 reps (1-2 min rest)",
-            "3 sets, 10 reps (1-2 min rest)", "3 sets, 6-10 reps (1-2 min rest)", "3 sets, 1-3 reps (1-2 min rest)",
-            "3 sets, 10 reps (1-2 min rest)"};
+    String[] repetition = {"4 sets, 8 reps (1-2 min rest)", "4 sets, 8 reps (1-2 min rest)", "4 sets, 8 reps (1-2 min rest)",
+            "4 sets, 8 reps (1-2 min rest)", "4 sets, 8 reps (1-2 min rest)", "4 sets, 8 reps (1-2 min rest)",
+            "4 sets, 8 reps (1-2 min rest)", "4 sets, 8 reps (1-2 min rest)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

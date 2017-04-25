@@ -16,8 +16,7 @@ public class WorkoutLWEasyD3 extends AppCompatActivity {
     ListView LWED3;
 
     // components of the list on the screen
-    int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.benchpress,
-            R.drawable.pushup, R.drawable.latspulldown};
+    int[] images = {R.drawable.barbellsquat, R.drawable.deadlift, R.drawable.benchpress, R.drawable.pushup, R.drawable.latspulldown};
 
     final String[] workouts = {"Barbell Squats", "Deadlifts", "Bench Press", "Push Ups", "Lats Pulldown"};
 

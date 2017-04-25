@@ -16,10 +16,10 @@ public class WorkoutGWEasyD15 extends AppCompatActivity {
     ListView GWED15;
 
     // components of the list on the screen
-    int[] images = {R.drawable.squat, R.drawable.deadlift, R.drawable.calfraises, R.drawable.benchpress, R.drawable.pushup,
-            R.drawable.pullup, R.drawable.latspulldown};
+    int[] images = {R.drawable.barbellsquat, R.drawable.deadlift, R.drawable.standingcalfraises, R.drawable.benchpress, R.drawable.pushup,
+            R.drawable.pullup, R.drawable.seatedrow};
 
-    final String[] workouts = {"Barbell Squats", "Deadlifts", "Calves Raises", "Bench Press", "Push Ups", "Pull Ups", "Seated Row"};
+    final String[] workouts = {"Barbell Squats", "Deadlifts", "Standing Calf Raises", "Bench Press", "Push Ups", "Pull Ups", "Seated Row"};
 
     String[] repetition = {"3 sets, 8 reps (1-2 min rest)", "3 sets, 8 reps (1-2 min rest)", "3 sets, 12 reps (1-2 min rest)",
             "3 sets, 8 reps (1-2 min rest)", "3 sets, 8-12 reps (1-2 min rest)", "3 sets, 4-6 reps (1-2 min rest)",
