@@ -91,7 +91,6 @@
         <activity android:name=".GWEasy_Java.WorkoutGWEasyD26" />
         <activity android:name=".GWEasy_Java.WorkoutGWEasyD27" />
         <activity android:name=".GWEasy_Java.WorkoutGWEasyD28" />
-
         <activity android:name=".LWEasy_Java.ScheduleLWeightEasy" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD1" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD2" />
@@ -121,7 +120,6 @@
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD26" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD27" />
         <activity android:name=".LWEasy_Java.WorkoutLWEasyD28" />
-
         <activity android:name=".GWMedium_Java.ScheduleGWeightMedium" />
         <activity android:name=".GWMedium_Java.WorkoutGWMediumD1" />
         <activity android:name=".GWMedium_Java.WorkoutGWMediumD2" />
@@ -151,7 +149,6 @@
         <activity android:name=".GWMedium_Java.WorkoutGWMediumD26" />
         <activity android:name=".GWMedium_Java.WorkoutGWMediumD27" />
         <activity android:name=".GWMedium_Java.WorkoutGWMediumD28" />
-
         <activity android:name=".LWMedium_Java.ScheduleLWeightMedium" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD1" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD2" />
@@ -181,7 +178,6 @@
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD26" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD27" />
         <activity android:name=".LWMedium_Java.WorkoutLWMediumD28" />
-
         <activity android:name=".GWHard_Java.ScheduleGWeightHard" />
         <activity android:name=".GWHard_Java.WorkoutGWHardD1" />
         <activity android:name=".GWHard_Java.WorkoutGWHardD2" />
@@ -211,7 +207,6 @@
         <activity android:name=".GWHard_Java.WorkoutGWHardD26" />
         <activity android:name=".GWHard_Java.WorkoutGWHardD27" />
         <activity android:name=".GWHard_Java.WorkoutGWHardD28" />
-
         <activity android:name=".LWHard_Java.ScheduleLWeightHard" />
         <activity android:name=".LWHard_Java.WorkoutLWHardD1" />
         <activity android:name=".LWHard_Java.WorkoutLWHardD2" />
@@ -240,7 +235,8 @@
         <activity android:name=".LWHard_Java.WorkoutLWHardD25" />
         <activity android:name=".LWHard_Java.WorkoutLWHardD26" />
         <activity android:name=".LWHard_Java.WorkoutLWHardD27" />
-        <activity android:name=".LWHard_Java.WorkoutLWHardD28"></activity>
+        <activity android:name=".LWHard_Java.WorkoutLWHardD28" />
+        <activity android:name=".LookFoodActivity"></activity>
     </application>
 
 </manifest>
