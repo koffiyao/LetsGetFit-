@@ -16,12 +16,12 @@ import static java.sql.Types.NULL;
 
 
 public class UserInfoActivity extends AppCompatActivity {
-    Toast toast;
-    public static int weight, age;
-    public static String gender;
-    Context context = getApplicationContext();
-    int duration = Toast.LENGTH_SHORT;
-    RadioButton male, female;
+//    Toast toast;
+//    public static int weight, age;
+//    public static String gender;
+//    Context context = getApplicationContext();
+//    int duration = Toast.LENGTH_SHORT;
+//    RadioButton male, female;
 
 
     @Override
@@ -31,33 +31,33 @@ public class UserInfoActivity extends AppCompatActivity {
     }
 
     // Saves the user information
-    public void saveInfo() {
-        String successText = "Your information has been saved.";
-        String errorText = "Your information cannot be saved.";
-
-        Save.setAge(R.id.age);
-        Save.setWeight(R.id.weight);
-        male = (RadioButton) findViewById(R.id.maleButton);
-        female = (RadioButton) findViewById(R.id.femaleButton);
-
-        if (male.isChecked() && !female.isChecked())
-            Save.setGender("male");
-        else if (female.isChecked() && !male.isChecked())
-            Save.setGender("female");
-
-        age = Save.getAge();
-        weight = Save.getWeight();
-        gender = Save.getGender();
-
-        // Checks to make sure user has entered all information
-        if (age == NULL || weight == NULL || gender == "") {
-            toast = Toast.makeText(context, errorText, duration);
-            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
-            toast.show();
-        } else {
-            toast = Toast.makeText(context, successText, duration);
-            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
-            toast.show();
-        }
-    }
+//    public void saveInfo() {
+//        String successText = "Your information has been saved.";
+//        String errorText = "Your information cannot be saved.";
+//
+//        Save.setAge(R.id.age);
+//        Save.setWeight(R.id.weight);
+//        male = (RadioButton) findViewById(R.id.maleButton);
+//        female = (RadioButton) findViewById(R.id.femaleButton);
+//
+//        if (male.isChecked() && !female.isChecked())
+//            Save.setGender("male");
+//        else if (female.isChecked() && !male.isChecked())
+//            Save.setGender("female");
+//
+//        age = Save.getAge();
+//        weight = Save.getWeight();
+//        gender = Save.getGender();
+//
+//        // Checks to make sure user has entered all information
+//        if (age == NULL || weight == NULL || gender == "") {
+//            toast = Toast.makeText(context, errorText, duration);
+//            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+//            toast.show();
+//        } else {
+//            toast = Toast.makeText(context, successText, duration);
+//            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+//            toast.show();
+//        }
+//    }
 }
