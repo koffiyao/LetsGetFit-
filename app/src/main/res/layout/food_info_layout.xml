@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/item_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/brand_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/item_text"
+        android:layout_alignRight="@+id/item_text"
+        android:layout_below="@+id/item_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/bramd_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/calorie_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/brand_text"
+        android:layout_alignRight="@+id/brand_text"
+        android:layout_below="@+id/brand_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/calorie_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fat_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calorie_text"
+        android:layout_alignStart="@+id/calorie_text"
+        android:layout_below="@+id/calorie_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/fat_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/carbs_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fat_text"
+        android:layout_alignStart="@+id/fat_text"
+        android:layout_below="@+id/fat_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/carbohydrate_text"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/protein_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carbs_text"
+        android:layout_alignStart="@+id/carbs_text"
+        android:layout_below="@+id/carbs_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/protein_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/serving_size_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/protein_text"
+        android:layout_alignStart="@+id/protein_text"
+        android:layout_below="@+id/protein_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/serving_size_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/servin_unit_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serving_size_text"
+        android:layout_alignStart="@+id/serving_size_text"
+        android:layout_below="@+id/serving_size_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/serving_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/item_text"
+        android:layout_toRightOf="@+id/item_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/brand_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_alignStart="@+id/item_name"
+        android:layout_alignTop="@+id/brand_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/calorie_value"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/brand_name"
+        android:layout_alignStart="@+id/brand_name"
+        android:layout_alignTop="@+id/calorie_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/fat_value"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calorie_value"
+        android:layout_alignStart="@+id/calorie_value"
+        android:layout_alignTop="@+id/fat_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/carbs_value"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fat_value"
+        android:layout_alignStart="@+id/fat_value"
+        android:layout_alignTop="@+id/carbs_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/protein_value"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carbs_value"
+        android:layout_alignStart="@+id/carbs_value"
+        android:layout_alignTop="@+id/protein_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/serving_size_value"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/protein_value"
+        android:layout_alignStart="@+id/protein_value"
+        android:layout_alignTop="@+id/serving_size_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/serving_unit_value"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serving_size_value"
+        android:layout_alignStart="@+id/serving_size_value"
+        android:layout_alignTop="@+id/servin_unit_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+</RelativeLayout>

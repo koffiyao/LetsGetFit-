@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ykeocorp.letsgetfit.GWEasy_Java.WorkoutGWEasyD1">
+    tools:context=".Workout_Java.Gain_Weight_Java.GWEasy_Java.WorkoutGWEasyD1">
 
     <ListView
         android:id="@+id/GWED1"
@@ -13,4 +13,4 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:dividerHeight="2dp" />
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
