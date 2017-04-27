@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ykeocorp.letsgetfit.GWEasy_Java.WorkoutGWEasyD4">
+    tools:context=".Workout_Java.Gain_Weight_Java.GWEasy_Java.WorkoutGWEasyD4">
 
 </android.support.constraint.ConstraintLayout>

@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+
+import com.ykeocorp.letsgetfit.Nutrition_Java.NutritionActivity;
+import com.ykeocorp.letsgetfit.Workout_Java.WorkoutActivity;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ykeocorp.letsgetfit.GWMedium_Java.WorkoutGWMediumD6">
+    tools:context=".Workout_Java.Gain_Weight_Java.GWMedium_Java.WorkoutGWMediumD6">
 
     <ListView
         android:id="@+id/GWMD6"

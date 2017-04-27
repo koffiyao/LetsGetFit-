@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ykeocorp.letsgetfit.GWEasy_Java.ScheduleGWeightEasy">
+    tools:context=".Workout_Java.Gain_Weight_Java.GWEasy_Java.ScheduleGWeightEasy">
 
     <ListView
         android:id="@+id/GW_easyListView"
