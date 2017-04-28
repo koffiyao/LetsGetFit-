@@ -23,7 +23,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView_reps"
         android:layout_marginTop="18dp"
-        android:textSize="25sp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView_reps"
@@ -34,5 +35,6 @@
         android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/imageView"
         android:layout_toRightOf="@+id/imageView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="15sp" />
 </RelativeLayout>
