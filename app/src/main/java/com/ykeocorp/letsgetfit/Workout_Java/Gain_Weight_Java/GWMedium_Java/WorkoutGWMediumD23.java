@@ -31,7 +31,7 @@ public class WorkoutGWMediumD23 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout_gwmedium_d23);
 
-        GWMD23 = (ListView) findViewById(R.id.GWMD1);
+        GWMD23 = (ListView) findViewById(R.id.GWMD23);
 
         WorkoutGWMediumD23.CustomAdapter customAdapter = new WorkoutGWMediumD23.CustomAdapter();
 
