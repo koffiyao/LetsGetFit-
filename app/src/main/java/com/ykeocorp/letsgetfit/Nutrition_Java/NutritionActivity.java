@@ -19,4 +19,9 @@ public class NutritionActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LookFoodActivity.class);
         startActivity(intent);
     }
+
+    public void addFood(View view) {
+        Intent intent = new Intent(this, AddFoodActivity.class);
+        startActivity(intent);
+    }
 }

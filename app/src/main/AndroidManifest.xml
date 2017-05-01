@@ -236,7 +236,8 @@
         <activity android:name=".Workout_Java.Lose_Weight_Java.LWHard_Java.WorkoutLWHardD26" />
         <activity android:name=".Workout_Java.Lose_Weight_Java.LWHard_Java.WorkoutLWHardD27" />
         <activity android:name=".Workout_Java.Lose_Weight_Java.LWHard_Java.WorkoutLWHardD28" />
-        <activity android:name=".Nutrition_Java.LookFoodActivity"></activity>
+        <activity android:name=".Nutrition_Java.LookFoodActivity" />
+        <activity android:name=".Nutrition_Java.AddFoodActivity"></activity>
     </application>
 
 </manifest>

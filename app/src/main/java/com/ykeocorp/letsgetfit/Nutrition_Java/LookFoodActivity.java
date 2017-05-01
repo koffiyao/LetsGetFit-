@@ -61,10 +61,8 @@ public class LookFoodActivity extends AppCompatActivity {
 
     class RetrieveFeedTask extends AsyncTask<Void, Void, String> {
 
-        private Exception exception;
-
         protected void onPreExecute() {
-           // progressBar.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
             //result.setVisibility(View.VISIBLE);
         }
 
@@ -130,7 +128,7 @@ public class LookFoodActivity extends AppCompatActivity {
                 Log.e("Error!", e.getMessage(), e);
             }
 
-
+            
             progressBar.setVisibility(View.GONE);
             // TODO: check this.exception
             // TODO: do something with the feed
