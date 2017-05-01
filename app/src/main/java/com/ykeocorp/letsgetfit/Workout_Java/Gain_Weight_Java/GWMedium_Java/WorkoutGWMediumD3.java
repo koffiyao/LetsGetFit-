@@ -16,7 +16,7 @@ public class WorkoutGWMediumD3 extends AppCompatActivity {
     ListView GWMD3;
 
     // components of the list on the screen
-    int[] images = {R.drawable.deadlift, R.drawable.pullup, R.drawable.bentoverbarbellrow, R.drawable.bicepcurl, R.drawable.preachercurl};
+    int[] images = {R.drawable.deadlift, R.drawable.pullup, R.drawable.bentoverbarbellrow, R.drawable.barbellcurl, R.drawable.preachercurl};
 
     final String[] workouts = {"Deadlifts", "Pull Up", "Bent-Over Barbell Row", "Bicep Curl", "Preacher Curl"};
 

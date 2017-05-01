@@ -17,7 +17,7 @@ public class WorkoutGWEasyD10 extends AppCompatActivity {
 
     // components of the list on the screen
     int[] images = {R.drawable.barbellsquat, R.drawable.standingcalfraises, R.drawable.benchpress, R.drawable.pushup, R.drawable.pullup,
-            R.drawable.latspulldown, R.drawable.tricepspushdown, R.drawable.bicepcurl};
+            R.drawable.latspulldown, R.drawable.tricepspushdown, R.drawable.barbellcurl};
 
     final String[] workouts = {"Barbell Squats", "Standing Calf Raises", "Bench Press", "Push Ups", "Pull Ups", "Lats Pulldown",
             "Triceps Rope Pushdown", "Biceps Curl"};
