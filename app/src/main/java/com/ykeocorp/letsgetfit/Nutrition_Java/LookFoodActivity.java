@@ -128,7 +128,7 @@ public class LookFoodActivity extends AppCompatActivity {
                 Log.e("Error!", e.getMessage(), e);
             }
 
-            
+
             progressBar.setVisibility(View.GONE);
             // TODO: check this.exception
             // TODO: do something with the feed
