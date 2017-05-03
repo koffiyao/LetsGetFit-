@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Workout_Java.Lose_Weight_Java.LWHard_Java.WorkoutLWHardD24">
 
+    <ListView
+        android:id="@+id/LWHD24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:dividerHeight="2dp" />
 </android.support.constraint.ConstraintLayout>
