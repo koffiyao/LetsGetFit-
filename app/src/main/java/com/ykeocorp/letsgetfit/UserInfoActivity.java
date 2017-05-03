@@ -1,13 +1,21 @@
 package com.ykeocorp.letsgetfit;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.ykeocorp.letsgetfit.Nutrition_Java.AddFoodActivity;
+
+import static java.lang.Math.ceil;
 
 
 /**
@@ -18,8 +26,10 @@ import android.widget.RadioButton;
 public class UserInfoActivity extends AppCompatActivity implements View.OnClickListener {
 
     RadioButton maleButton, femaleButton, gmButton, lwButton;
-    Button save;
+    Button save, calorie;
     EditText age, h_feet, h_inch, weight;
+
+    public final static String CALORIE_KEY = "Nutrition_Java.calorie_key";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +53,10 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
         weight = (EditText) findViewById(R.id.weight);
 
         save = (Button) findViewById(R.id.saveButton);
+        calorie = (Button) findViewById(R.id.calorieButton);
 
         save.setOnClickListener(this);
+
     }
 
     private void loadPrefs() {
@@ -102,7 +114,7 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
 
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
         setPrefs("WEIGHT", Integer.parseInt(weight.getText().toString()));
         setPrefs("H_FT", Integer.parseInt(h_feet.getText().toString()));
         setPrefs("H_IN", Integer.parseInt(h_inch.getText().toString()));
@@ -114,7 +126,39 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
         setPrefs("GAIN", gmButton.isChecked());
         setPrefs("LOSE", lwButton.isChecked());
 
+        Toast.makeText(this, "Info saved", Toast.LENGTH_SHORT).show();
+    }
 
+    public void computeCalorie(View view) {
+        double kg = Integer.parseInt(weight.getText().toString()) / 2.2;
+        double height = 2.54 * (Integer.parseInt(h_feet.getText().toString()) * 12.0 +
+                Integer.parseInt(h_inch.getText().toString()));
+        int ageUser = Integer.parseInt(age.getText().toString());
+
+        double BMR = 0.0;
+
+        if (maleButton.isChecked()) {
+            if (gmButton.isChecked()) {
+                BMR = ceil(1.55 * (66.47 + (13.75 * kg) + (5.0 * height) - (6.75 * ageUser))) + 500;
+            }
+            else {
+                BMR = ceil(1.55 * (66.47 + (13.75 * kg) + (5.0 * height) - (6.75 * ageUser))) - 500;
+            }
+        }
+        else if (femaleButton.isChecked()){
+            if (gmButton.isChecked()) {
+                BMR = ceil(1.55 * (665.09 + (9.56 * kg) + (1.84 * height) - (4.67 * ageUser))) + 500;
+            }
+            else {
+                BMR = ceil(1.55 * (665.09 + (9.56 * kg) + (1.84 * height) - (4.67 * ageUser))) - 500;
+            }
+        }
+        Toast.makeText(this, "Calories to consume computed", Toast.LENGTH_SHORT).show();
+
+        String value = Double.toString(BMR);
+        Intent intent = new Intent(this,AddFoodActivity.class);
+        intent.putExtra(CALORIE_KEY, value);
+        startActivity(intent);
 
     }
 }

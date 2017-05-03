@@ -18,12 +18,12 @@
     <string name="button_hard">Hard</string>
     <string name="search_food">Look for Food</string>
     <string name="add_food">Add food</string>
-    <string name="protein_text">Protein:</string>
-    <string name="carbohydrate_text">Carbohydrate:</string>
-    <string name="fat_text">Total Fat:</string>
-    <string name="calorie_text">Calories:</string>
-    <string name="serving_size_text">Serving Size:</string>
-    <string name="serving_text">Serving Unit:</string>
+    <string name="protein_text">Protein</string>
+    <string name="carbohydrate_text">Carbohydrate</string>
+    <string name="fat_text">Total Fat</string>
+    <string name="calorie_text">Calories</string>
+    <string name="serving_size_text">Serving Size</string>
+    <string name="serving_text">Serving Unit</string>
     <string name="item_text">Name:</string>
     <string name="bramd_text">Brand:</string>
     <string name="user_info_title">USER INFO</string>
@@ -38,4 +38,9 @@
     <string name="lbs_text">lbs</string>
     <string name="goal_text">Goal:</string>
     <string name="button_save">Save</string>
+    <string name="button_calculateCal">Calculate Calorie</string>
+    <string name="button_goal">Save Goal</string>
+    <string name="button_saveFood">Save Food</string>
+    <string name="textview_addFood">Add Food</string>
+    <string name="button_loadGoal">Load Goal</string>
 </resources>

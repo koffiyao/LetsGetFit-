@@ -41,7 +41,7 @@
         android:layout_below="@+id/userInfo"
         android:layout_alignLeft="@+id/userInfo"
         android:layout_alignStart="@+id/userInfo"
-        android:id="@+id/groupSex">
+        android:id="@+id/radioGroup2">
 
         <RadioButton
             android:id="@+id/maleButton"
@@ -62,11 +62,12 @@
         android:id="@+id/ageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/genderText"
+        android:layout_alignStart="@+id/genderText"
+        android:layout_below="@+id/radioGroup2"
         android:layout_marginTop="31dp"
         android:text="@string/age_text"
-        android:layout_below="@+id/groupSex"
-        android:layout_alignLeft="@+id/genderText"
-        android:layout_alignStart="@+id/genderText" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <EditText
         android:id="@+id/age"
@@ -74,8 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/ageText"
         android:layout_alignBottom="@+id/ageText"
-        android:layout_alignLeft="@+id/groupSex"
-        android:layout_alignStart="@+id/groupSex"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignStart="@+id/radioGroup2"
         android:ems="10"
         android:inputType="number" />
 
@@ -87,7 +88,8 @@
         android:layout_alignStart="@+id/ageText"
         android:layout_below="@+id/age"
         android:layout_marginTop="24dp"
-        android:text="@string/height_text" />
+        android:text="@string/height_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <EditText
         android:id="@+id/height_ft"
@@ -133,11 +135,12 @@
         android:id="@+id/weightText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/genderText"
+        android:layout_alignRight="@+id/genderText"
+        android:layout_below="@+id/height_ft"
         android:layout_marginTop="42dp"
         android:text="@string/weight_text"
-        android:layout_below="@+id/height_ft"
-        android:layout_alignRight="@+id/genderText"
-        android:layout_alignEnd="@+id/genderText" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <EditText
         android:id="@+id/weight"
@@ -191,7 +194,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:checked="false"
             android:text="@string/button_lose_weight" />
     </RadioGroup>
 
@@ -199,10 +201,26 @@
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="@string/button_save"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:text="@string/button_save" />
+        android:layout_toRightOf="@+id/height_in"
+        android:layout_toEndOf="@+id/height_in"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:id="@+id/calorieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveButton"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_alignEnd="@+id/groupGoal"
+        android:layout_alignRight="@+id/groupGoal"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:onClick="computeCalorie"
+        android:text="@string/button_calculateCal" />
 
 
 </RelativeLayout>
