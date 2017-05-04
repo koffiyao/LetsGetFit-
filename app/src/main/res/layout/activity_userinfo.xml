@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_2">
 
 
     <TextView
         android:id="@+id/userInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
         android:text="@string/user_info_title"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@android:color/background_dark"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp" />
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/genderText"
@@ -31,7 +32,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="40dp"
         android:text="@string/gender_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -48,14 +50,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_male" />
+            android:text="@string/button_male"
+            android:textColor="@android:color/background_light" />
 
         <RadioButton
             android:id="@+id/femaleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_female" />
+            android:text="@string/button_female"
+            android:textColor="@android:color/background_light" />
     </RadioGroup>
 
     <TextView
@@ -67,7 +71,8 @@
         android:layout_below="@+id/radioGroup2"
         android:layout_marginTop="31dp"
         android:text="@string/age_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/age"
@@ -78,7 +83,8 @@
         android:layout_alignLeft="@+id/radioGroup2"
         android:layout_alignStart="@+id/radioGroup2"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/heightText"
@@ -89,7 +95,8 @@
         android:layout_below="@+id/age"
         android:layout_marginTop="24dp"
         android:text="@string/height_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/height_ft"
@@ -100,7 +107,8 @@
         android:layout_alignLeft="@+id/age"
         android:layout_alignStart="@+id/age"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/height_in"
@@ -111,7 +119,8 @@
         android:layout_toEndOf="@+id/ftText"
         android:layout_toRightOf="@+id/ftText"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/ftText"
@@ -120,7 +129,8 @@
         android:layout_alignBottom="@+id/heightText"
         android:layout_toEndOf="@+id/height_ft"
         android:layout_toRightOf="@+id/height_ft"
-        android:text="@string/ft_text" />
+        android:text="@string/ft_text"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/inText"
@@ -129,7 +139,8 @@
         android:layout_alignTop="@+id/ftText"
         android:layout_toEndOf="@+id/height_in"
         android:layout_toRightOf="@+id/height_in"
-        android:text="@string/in_text" />
+        android:text="@string/in_text"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/weightText"
@@ -140,7 +151,8 @@
         android:layout_below="@+id/height_ft"
         android:layout_marginTop="42dp"
         android:text="@string/weight_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/weight"
@@ -151,7 +163,8 @@
         android:layout_alignLeft="@+id/height_ft"
         android:layout_alignStart="@+id/height_ft"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/lbsText"
@@ -160,7 +173,8 @@
         android:layout_alignLeft="@+id/height_in"
         android:layout_alignStart="@+id/height_in"
         android:layout_alignTop="@+id/weightText"
-        android:text="@string/lbs_text" />
+        android:text="@string/lbs_text"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/goalText"
@@ -171,7 +185,8 @@
         android:layout_below="@+id/weight"
         android:layout_marginTop="42dp"
         android:text="@string/goal_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <RadioGroup
         android:id="@+id/groupGoal"
@@ -187,14 +202,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_gain_weight" />
+            android:text="@string/button_gain_weight"
+            android:textColor="@android:color/background_light" />
 
         <RadioButton
             android:id="@+id/LWRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_lose_weight" />
+            android:text="@string/button_lose_weight"
+            android:textColor="@android:color/background_light" />
     </RadioGroup>
 
     <Button

@@ -24,7 +24,6 @@ import java.net.URL;
 public class LookFoodActivity extends AppCompatActivity {
 
     EditText foodText;
-    ProgressBar progressBar;
     ListView result;
     FoodInfoAdapter food_infoAdapter;
 
@@ -44,7 +43,6 @@ public class LookFoodActivity extends AppCompatActivity {
 
         foodText = (EditText) findViewById(R.id.editText);
         result = (ListView) findViewById(R.id.food_listView);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
         Button queryButton = (Button) findViewById(R.id.button);
         queryButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,13 +122,6 @@ public class LookFoodActivity extends AppCompatActivity {
             } catch (JSONException e){
                 Log.e("Error!", e.getMessage(), e);
             }
-
-
-            progressBar.setVisibility(View.GONE);
-            // TODO: check this.exception
-            // TODO: do something with the feed
-
-
         }
     }
 }

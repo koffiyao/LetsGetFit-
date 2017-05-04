@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Workout_Java.Lose_Weight_Java.LWEasy_Java.WorkoutLWEasyD4">
+    tools:context=".Workout_Java.Lose_Weight_Java.LWEasy_Java.WorkoutLWEasyD4"
+    android:background="@drawable/background_2">
 
     <ImageView
         android:id="@+id/cardio_image"
@@ -24,6 +25,7 @@
         android:layout_marginTop="62dp"
         android:text="@string/text_cardio"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textSize="25sp"
         android:textStyle="bold" />
 </RelativeLayout>

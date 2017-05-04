@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Workout_Java.Gain_Weight_Java.GWMedium_Java.WorkoutGWMediumD22">
+    tools:context=".Workout_Java.Gain_Weight_Java.GWMedium_Java.WorkoutGWMediumD22"
+    android:background="@drawable/background_2">
 
     <ListView
         android:id="@+id/GWMD22"

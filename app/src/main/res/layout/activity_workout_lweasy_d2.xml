@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Workout_Java.Lose_Weight_Java.LWEasy_Java.WorkoutLWEasyD2">
+    tools:context=".Workout_Java.Lose_Weight_Java.LWEasy_Java.WorkoutLWEasyD2"
+    android:background="@drawable/background_2">
 
     <TextView
         android:id="@+id/textView3"
@@ -15,7 +16,7 @@
         android:layout_marginTop="156dp"
         android:text="@string/text_rest"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/background_light"
         android:textSize="50sp"
         android:textStyle="bold" />
 </RelativeLayout>
