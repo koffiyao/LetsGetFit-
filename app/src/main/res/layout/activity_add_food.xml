@@ -4,58 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ykeocorp.letsgetfit.Nutrition_Java.AddFoodActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/goal_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/textView_calorieDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/saveGoal_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginStart="19dp"
-        android:text="@string/button_goal"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
-
-    <Button
-        android:id="@+id/saveFood_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/saveGoal_button"
-        android:layout_alignBottom="@+id/saveGoal_button"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
-        android:text="@string/button_saveFood" />
+    tools:context="com.ykeocorp.letsgetfit.Nutrition_Java.AddFoodActivity"
+    android:background="@drawable/background_2">
 
     <TextView
         android:id="@+id/title_food"
@@ -63,11 +13,100 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:text="@string/add_food"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/goal_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_calorieDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_calorieDisplay"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/textView_calorieDisplay"
+        android:layout_toRightOf="@+id/textView_calorieDisplay"
+        android:text="@string/calorie_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/food_editText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/food_editText"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/food_editText"
+        android:layout_toRightOf="@+id/food_editText"
+        android:text="@string/button_search" />
+
+    <Button
+        android:id="@+id/saveGoal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/food_editText"
+        android:layout_alignStart="@+id/food_editText"
+        android:layout_below="@+id/addFood_listView"
+        android:layout_marginTop="20dp"
+        android:onClick="saveGoal"
+        android:text="@string/button_goal" />
+
+    <Button
+        android:id="@+id/saveFood_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_saveFood"
+        android:layout_alignBaseline="@+id/saveGoal_button"
+        android:layout_alignBottom="@+id/saveGoal_button"
+        android:layout_toRightOf="@+id/food_editText"
+        android:layout_toEndOf="@+id/food_editText" />
 
     <Button
         android:id="@+id/loadGoal_button"
@@ -79,16 +118,11 @@
         android:onClick="loadGoal"
         android:text="@string/button_loadGoal" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calorie_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_alignBottom="@+id/textView_calorieDisplay"
-        android:layout_toRightOf="@+id/textView_calorieDisplay"
-        android:layout_toEndOf="@+id/textView_calorieDisplay"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp" />
+    <ListView
+        android:id="@+id/addFood_listView"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/food_editText"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

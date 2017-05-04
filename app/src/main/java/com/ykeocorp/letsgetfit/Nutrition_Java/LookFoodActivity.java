@@ -31,11 +31,10 @@ public class LookFoodActivity extends AppCompatActivity {
     static final String APP_ID = "65009ff2";
     static final String APP_KEY = "28a51cd162c6898cb107d06b74ef1bcc";
     static final String API_URL_SEARCH = "https://api.nutritionix.com/v1_1/search/";
-    static final String API_URL_ITEM = "https://api.nutritionix.com/v1_1/item?";
     static final String FIELD = "?results=0%3A10&" +
-            "fields=fields=item_name%2Cbrand_name%2Cnf_calories" +
+            "fields=item_name%2Cbrand_name%2Cnf_calories" +
             "%2Cnf_total_fat%2Cnf_total_carbohydrate%2Cnf_protein" +
-            "%2Cnf_serving_size_qty%2Cnf_serving_size_unit&";
+            "%2Cnf_serving_size_qty%2Cnf_serving_size_unit";
 
 
     @Override
@@ -62,8 +61,6 @@ public class LookFoodActivity extends AppCompatActivity {
     class RetrieveFeedTask extends AsyncTask<Void, Void, String> {
 
         protected void onPreExecute() {
-            progressBar.setVisibility(View.GONE);
-            //result.setVisibility(View.VISIBLE);
         }
 
         protected String doInBackground(Void... urls) {
@@ -109,7 +106,7 @@ public class LookFoodActivity extends AppCompatActivity {
                 for (int count = 0; count < 10; count++){
                     JSONObject _result = arr.getJSONObject(count);
                     JSONObject object = _result.getJSONObject("fields");
-                    item_name = "X"; //object.getString("item_name");
+                    item_name = object.getString("item_name");
                     brand_name = object.getString("brand_name");
                     calorie = object.getDouble("nf_calories");
                     protein = object.getDouble("nf_protein");

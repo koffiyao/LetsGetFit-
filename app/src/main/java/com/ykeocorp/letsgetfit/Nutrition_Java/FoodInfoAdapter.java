@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Audrey on 4/25/2017.
+ * Created by Oswald on 4/25/2017.
  */
 
 public class FoodInfoAdapter extends ArrayAdapter {

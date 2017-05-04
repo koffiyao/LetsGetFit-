@@ -22,6 +22,10 @@ import static java.lang.Math.ceil;
  * Created by Ama on 4/10/2017.
  */
 
+/**
+ * Last modified by Oswald on 5/3/2017
+ */
+
 
 public class UserInfoActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -150,7 +154,7 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
                 BMR = ceil(1.55 * (665.09 + (9.56 * kg) + (1.84 * height) - (4.67 * ageUser))) + 500;
             }
             else {
-                BMR = ceil(1.55 * (665.09 + (9.56 * kg) + (1.84 * height) - (4.67 * ageUser))) - 500;
+                BMR = ceil(1.375 * (665.09 + (9.56 * kg) + (1.84 * height) - (4.67 * ageUser))) - 500;
             }
         }
         Toast.makeText(this, "Calories to consume computed", Toast.LENGTH_SHORT).show();

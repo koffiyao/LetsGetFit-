@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ykeocorp.letsgetfit.Workout_Java.Lose_Weight_Java.LoseWeightTrainingDifficulty">
+    tools:context="com.ykeocorp.letsgetfit.Workout_Java.Lose_Weight_Java.LoseWeightTrainingDifficulty"
+    android:background="@drawable/background_2">
 
     <Button
         android:id="@+id/LWEasy"

@@ -16,6 +16,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/item_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -28,6 +29,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/bramd_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -40,6 +42,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/calorie_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -52,6 +55,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/fat_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -65,6 +69,7 @@
         android:text="@string/carbohydrate_text"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -77,6 +82,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/protein_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -89,6 +95,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/serving_size_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -101,6 +108,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/serving_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
     <TextView
@@ -112,7 +120,8 @@
         android:layout_marginStart="40dp"
         android:layout_toEndOf="@+id/item_text"
         android:layout_toRightOf="@+id/item_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/brand_name"
@@ -121,7 +130,8 @@
         android:layout_alignLeft="@+id/item_name"
         android:layout_alignStart="@+id/item_name"
         android:layout_alignTop="@+id/brand_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/calorie_value"
@@ -130,7 +140,8 @@
         android:layout_alignLeft="@+id/brand_name"
         android:layout_alignStart="@+id/brand_name"
         android:layout_alignTop="@+id/calorie_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/fat_value"
@@ -139,7 +150,8 @@
         android:layout_alignLeft="@+id/calorie_value"
         android:layout_alignStart="@+id/calorie_value"
         android:layout_alignTop="@+id/fat_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/carbs_value"
@@ -148,7 +160,8 @@
         android:layout_alignLeft="@+id/fat_value"
         android:layout_alignStart="@+id/fat_value"
         android:layout_alignTop="@+id/carbs_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/protein_value"
@@ -157,7 +170,8 @@
         android:layout_alignLeft="@+id/carbs_value"
         android:layout_alignStart="@+id/carbs_value"
         android:layout_alignTop="@+id/protein_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/serving_size_value"
@@ -166,7 +180,8 @@
         android:layout_alignLeft="@+id/protein_value"
         android:layout_alignStart="@+id/protein_value"
         android:layout_alignTop="@+id/serving_size_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/serving_unit_value"
@@ -175,5 +190,6 @@
         android:layout_alignLeft="@+id/serving_size_value"
         android:layout_alignStart="@+id/serving_size_value"
         android:layout_alignTop="@+id/servin_unit_text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 </RelativeLayout>

@@ -24,8 +24,8 @@
     <string name="calorie_text">Calories</string>
     <string name="serving_size_text">Serving Size</string>
     <string name="serving_text">Serving Unit</string>
-    <string name="item_text">Name:</string>
-    <string name="bramd_text">Brand:</string>
+    <string name="item_text">Name</string>
+    <string name="bramd_text">Brand</string>
     <string name="user_info_title">USER INFO</string>
     <string name="gender_text">Gender:</string>
     <string name="button_male">Male</string>
@@ -43,4 +43,6 @@
     <string name="button_saveFood">Save Food</string>
     <string name="textview_addFood">Add Food</string>
     <string name="button_loadGoal">Load Goal</string>
+    <string name="text_rest">Rest</string>
+    <string name="text_cardio">20 min Cardio</string>
 </resources>
