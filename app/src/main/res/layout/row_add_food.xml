@@ -14,7 +14,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="26dp"
         android:checkMark="?android:attr/textCheckMark"
-        android:onClick="switchOn"
         android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
