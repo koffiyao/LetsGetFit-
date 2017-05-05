@@ -10,6 +10,6 @@ public class WorkoutGWEasyD2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout_gweasy_d2);
+        setContentView(R.layout.activity_workout_lweasy_d2);
     }
 }
