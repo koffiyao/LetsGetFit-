@@ -4,12 +4,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.content.Intent;
+import android.app.Activity;
 
+import com.google.android.youtube.player.YouTubeStandalonePlayer;
+import com.ykeocorp.letsgetfit.Config;
 import com.ykeocorp.letsgetfit.R;
+import com.ykeocorp.letsgetfit.Workout_Java.WorkoutActivity;
 
 public class WorkoutGWEasyD1 extends AppCompatActivity {
 
@@ -38,7 +44,19 @@ public class WorkoutGWEasyD1 extends AppCompatActivity {
         CustomAdapter customAdapter = new CustomAdapter();
 
         GWED1.setAdapter(customAdapter);
+/*
+        GWED1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick (AdapterView < ? > parent, View view, int position, long id){
+                if (position == 0) {
+                    Intent intent = YouTubeStandalonePlayer.createVideoIntent(this.resolveActivity(), Config.YOUTUBE_API_KEY, "j5inWlsPomc", 0, true, true);
+                    startActivity(intent);
+                }
+            }
+        }
+        */
     }
+
     class CustomAdapter extends BaseAdapter {
 
         @Override
