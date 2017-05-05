@@ -13,6 +13,10 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
+import com.ykeocorp.letsgetfit.Workout_Java.WorkoutActivity;
+
+import static android.R.id.message;
+
 /**
  * Created by Ama on 4/18/2017.
  */
@@ -42,9 +46,16 @@ public class SettingsActivity extends AppCompatActivity {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this);
 
+//        NotificationManager notificationManager = (NotificationManager) this
+//                .getSystemService(Context.NOTIFICATION_SERVICE);
+//        Notification notification = new Notification();
+
         //Create the intent that’ll fire when the user taps the notification//
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.androidauthority.com/"));
+        Intent intent = new Intent(this, WorkoutActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+//        notification.flags |= Notification.FLAG_AUTO_CANCEL;
+//        notificationManager.notify(0, notification);
 
         mBuilder.setContentIntent(pendingIntent);
 
