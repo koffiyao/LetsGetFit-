@@ -44,17 +44,19 @@ public class WorkoutGWEasyD1 extends AppCompatActivity {
         CustomAdapter customAdapter = new CustomAdapter();
 
         GWED1.setAdapter(customAdapter);
-/*
         GWED1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick (AdapterView < ? > parent, View view, int position, long id){
                 if (position == 0) {
-                    Intent intent = YouTubeStandalonePlayer.createVideoIntent(this.resolveActivity(), Config.YOUTUBE_API_KEY, "j5inWlsPomc", 0, true, true);
-                    startActivity(intent);
+                    Day1Video();
                 }
             }
-        }
-        */
+        });
+    }
+
+    void Day1Video(){
+        Intent intent = YouTubeStandalonePlayer.createVideoIntent(this, Config.YOUTUBE_API_KEY, "j5inWlsPomc", 0, true, true);
+        startActivity(intent);
     }
 
     class CustomAdapter extends BaseAdapter {
